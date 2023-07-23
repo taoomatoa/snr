@@ -214,7 +214,7 @@ passwd
 ;;
 15)
 clear
-cekxrayb
+cekxray
 ;;
 16)
 reboot
