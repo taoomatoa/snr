@@ -1,5 +1,4 @@
 #!/bin/bash
-#########################
 
 clear
 echo -n > /tmp/other.txt
