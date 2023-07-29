@@ -65,22 +65,6 @@ exit 0
 fi
 
 clear
-NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
-	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-		clear
-        echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-        echo -e "\\E[0;41;36m            Renew Vmess            \E[0m"
-        echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-		echo ""
-		echo "You have no existing clients!"
-		echo ""
-		echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-        echo ""
-        read -n 1 -s -r -p "Press any key to back on menu"
-        v2ray-menu
-	fi
-
-clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^####' | cut -d ' ' -f 2`);
 echo "----------------------------------------";
