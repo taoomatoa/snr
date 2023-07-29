@@ -68,7 +68,7 @@ clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq`);
 echo "--------------------------------";
-echo "-----=[ XRAY/Vmess USER LOGIN ]=------";
+echo "-----=[ Vmess USER LOGIN ]=------";
 echo "--------------------------------";for akun in "${data[@]}"
 do
 if [[ -z "$akun" ]]; then
