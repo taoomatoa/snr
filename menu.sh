@@ -101,55 +101,54 @@ clear
 clear
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[45;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
+echo -e "\E[42;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "${PURPLE} ✘ ${NC}Sever Uptime        = $( uptime -p  | cut -d " " -f 2-10000 ) "
-echo -e "${PURPLE} ✘ ${NC}Current Time        = $( date -d "0 days" +"%d-%m-%Y | %X" )"
-echo -e "${PURPLE} ✘ ${NC}Operating System    = $( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )"
-echo -e "${PURPLE} ✘ ${NC}Current Domain      = $( cat /etc/xray/domain )"
-echo -e "${PURPLE} ✘ ${NC}Server IP           = ${IP}"
-echo -e "${PURPLE} ✘ ${NC}Clients Name        = $Name"
-echo -e "${PURPLE} ✘ ${NC}Script Expert       = $Exp"
-echo -e "${PURPLE} ✘ ${NC}VPS Reboot          = Jam 12 Malam ${NC}"
-echo -e "${PURPLE} ✘ ${NC}Versi Script        = Xray${NC}"
-echo -e "${PURPLE} ✘ ${NC}Developer           = TAOO MATOOA${NC}"
+echo -e "${YELLOW} ✘ ${NC}Sever Uptime        = $( uptime -p  | cut -d " " -f 2-10000 ) "
+echo -e "${YELLOW} ✘ ${NC}Current Time        = $( date -d "0 days" +"%d-%m-%Y | %X" )"
+echo -e "${YELLOW} ✘ ${NC}Operating System    = $( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )"
+echo -e "${YELLOW} ✘ ${NC}Current Domain      = $( cat /etc/xray/domain )"
+echo -e "${YELLOW} ✘ ${NC}Server IP           = ${IP}"
+echo -e "${YELLOW} ✘ ${NC}Clients Name        = $Name"
+echo -e "${YELLOW} ✘ ${NC}Script Expert       = $Exp"
+echo -e "${YELLOW} ✘ ${NC}VPS Reboot          = Jam 12 Malam ${NC}"
+echo -e "${YELLOW} ✘ ${NC}Versi Script        = Xray${NC}"
+echo -e "${YELLOW} ✘ ${NC}Developer           = TAOO MATOOA${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[45;1;39m                     ⇱ STATUS SERVER ⇲                        \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e ""
-echo -e " ${PURPLE}CRON${NC}          :  ${GREEN}ON"
-echo -e " ${PURPLE}FAIL2BAN${NC}      :  ${GREEN}ON"
-echo -e " ${PURPLE}DROPBEAR ${NC}     :  ${GREEN}ON"
-echo -e " ${PURPLE}WEBSOCKET${NC}     :  ${GREEN}ON"
-echo -e " ${PURPLE}XRAY${NC}          :  ${status_xray} "
-echo -e " ${PURPLE}NGINX${NC}         :  ${status_nginx} "
-echo -e ""
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[45;1;39m                       ⇱ MENU SERVER ⇲                        \E[0m"
+echo -e "\E[42;1;39m                     ⇱ STATUS SERVER ⇲                        \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-echo -e " [${PURPLE}01${NC}]${NC} Add Ssh   $NC "
-echo -e " [${PURPLE}02${NC}]${NC} Add V2ray     $NC  "
-echo -e " [${PURPLE}03${NC}]${NC} Add Trojan    $NC"
-echo -e " [${PURPLE}04${NC}]${NC} Add Shadowsocks  $NC"
-echo -e " [${PURPLE}05${NC}]${NC} Add Trial    $NC"
-echo -e " [${PURPLE}06${NC}]${NC} Running Service $NC"
-echo -e " [${PURPLE}07${NC}]${NC} Certificate SSL $NC   "
-echo -e " [${PURPLE}08${NC}]${NC} Cek Trafik Xray $NC"
-echo -e " [${PURPLE}09${NC}]${NC} Info Dev  $NC"
-echo -e " [${PURPLE}10${NC}]${NC} Speedtest  $NC"
-echo -e " [${PURPLE}11${NC}]${NC} Add Domain    $NC"
-echo -e " [${PURPLE}12${NC}]${NC} Change Banner $NC"
-echo -e " [${PURPLE}13${NC}]${NC} Cek Bandwith User Xray $NC"
-echo -e " [${PURPLE}14${NC}]${NC} Change Password VPS $NC"
-echo -e " [${PURPLE}15${NC}]${NC} Reboot VPS $NC"
-echo -e " [${RED}0${NC}]${NC} Exit $NC"
+echo -e " ${YELLOW}CRON${NC}          :  ${GREEN}ON"
+echo -e " ${YELLOW}FAIL2BAN${NC}      :  ${GREEN}ON"
+echo -e " ${YELLOW}DROPBEAR ${NC}     :  ${GREEN}ON"
+echo -e " ${YELLOW}WEBSOCKET${NC}     :  ${GREEN}ON"
+echo -e " ${YELLOW}XRAY${NC}          :  ${status_xray} "
+echo -e " ${YELLOW}NGINX${NC}         :  ${status_nginx} "
+echo -e ""
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[42;1;39m                       ⇱ MENU SERVER ⇲                        \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e ""
+echo -e " [${YELLOW}01${NC}]${NC} SSH MENU   $NC "
+echo -e " [${YELLOW}02${NC}]${NC} V2RAY MENU     $NC  "
+echo -e " [${YELLOW}03${NC}]${NC} TROJAN MENU    $NC"
+echo -e " [${YELLOW}04${NC}]${NC} ADD SHADOWSHOCK  $NC"
+echo -e " [${YELLOW}05${NC}]${NC} TRIAL MENU    $NC"
+echo -e " [${YELLOW}06${NC}]${NC} RUN SERVICE $NC"
+echo -e " [${YELLOW}07${NC}]${NC} CERTIFICATE SSL $NC   "
+echo -e " [${YELLOW}08${NC}]${NC} INFO DEVICE  $NC"
+echo -e " [${YELLOW}09${NC}]${NC} SPEEDTEST  $NC"
+echo -e " [${YELLOW}10${NC}]${NC} ADD DOMAIN    $NC"
+echo -e " [${YELLOW}11${NC}]${NC} CHANGE BANNER $NC"
+echo -e " [${YELLOW}12${NC}]${NC} PORT INFORMATION $NC"
+echo -e " [${YELLOW}13${NC}]${NC} CHANGE PASSWD VPS $NC"
+echo -e " [${YELLOW}14${NC}]${NC} REBOOT VPS $NC"
+echo -e " [${RED}0${NC}]${NC} EXIT $NC"
 echo -e " ${RED}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[45;1;39m                      ⇱ TAOO MATOOA ⇲                       \E[0m"
+echo -e "\E[42;1;39m                      ⇱ TAOO MATOOA ⇲                       \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-read -p "Select From Options [ 1 - 15 ] : " menu
+read -p "Select From Options [ 1 - 14 ] : " menu
 case $menu in
 1)
 clear
@@ -181,34 +180,31 @@ crtv2ray
 ;;
 8)
 clear
-cekusage
+about
 ;;
 9)
 clear
-about
+speedtest
 ;;
 10)
 clear
-speedtest
+add-host
 ;;
 11)
 clear
-add-host
+banner
 ;;
 12)
 clear
-banner
+info-menu
 ;;
 13)
 clear
-info-menu
-;;
-14)
-clear
 passwd
 ;;
-15)
+14)
 reboot
+exit
 ;;
 0)
 exit
