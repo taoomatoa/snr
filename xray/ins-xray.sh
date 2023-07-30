@@ -568,6 +568,9 @@ wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/taoomatoa/src/ip
 wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/taoomatoa/src/ipuk/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
 wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/taoomatoa/src/ipuk/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
 wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/taoomatoa/src/ipuk/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/taoomatoa/src/ipuk/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/taoomatoa/src/ipuk/xray/cek-vless.sh" && chmod +x /usr/bin/cek-vless
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/taoomatoa/src/ipuk/xray/cek-tr.sh" && chmod +x /usr/bin/cek-tr
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "xray/Vmess"
