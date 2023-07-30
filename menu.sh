@@ -130,6 +130,8 @@ echo -e " │     [${YELLOW}03${NC}]${NC} TROJAN MENU$NC          │$NC     [${
 echo -e " │     [${YELLOW}04${NC}]${NC} ADD SHADOWSHOCK$NC      │$NC     [${YELLOW}11${NC}]${NC} CHANGE BANNER$NC"                                                                                                   
 echo -e " │     [${YELLOW}06${NC}]${NC} RUN SERVICE$NC          │$NC     [${YELLOW}13${NC}]${NC} CHANGE PASSWD VPS$NC"                                                                                                      
 echo -e " │     [${YELLOW}07${NC}]${NC} CERTIFICATE SS$NC       │$NC     [${YELLOW}14${NC}]${NC} REBOOT VPS$NC"
+echo -e " │"
+echo -e " │     [${YELLOW}0${NC}]${NC} EXIT MENU$NC"
 echo -e " ╰═════════════════════════════════════════════════════════════╯$NC"
 echo -e "   ${CYAN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "   │ $NC Developer${NC}      : $NC TaooMatoa"
