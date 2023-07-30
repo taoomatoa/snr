@@ -105,7 +105,7 @@ clear
 clear
 clear
 echo -e " ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮$NC"
-echo -e " │$NC\033[41m                  ⇱  TUNNELING TAOOMATOA ⇲                   $NC│$NC"
+echo -e " │$NC\033[41m                  ⇱ TUNNELING TAOOMATOA ⇲                   $NC│$NC"
 echo -e " ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e " ╭═════════════════════════════════════════════════════════════╮$NC"
 echo -e " │${YELLOW} ✘ ${NC}Sever Uptime  = $( uptime -p  | cut -d " " -f 2-10000 ) "
