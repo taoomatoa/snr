@@ -147,14 +147,14 @@ echo -e " [${PURPLE}11${NC}]${NC} Add Domain    $NC"
 echo -e " [${PURPLE}12${NC}]${NC} Change Banner $NC"
 echo -e " [${PURPLE}13${NC}]${NC} Cek Bandwith User Xray $NC"
 echo -e " [${PURPLE}14${NC}]${NC} Change Password VPS $NC"
-echo -e " [${PURPLE}15${NC}]${NC} Cek Login Xray $NC"
-echo -e " [${PURPLE}16${NC}]${NC} REBOOT VPS $NC"
+echo -e " [${PURPLE}15${NC}]${NC} Reboot VPS $NC"
+echo -e " [${RED}0${NC}]${NC} Exit $NC"
 echo -e " ${RED}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[45;1;39m                      ⇱ TAOO MATOOA ⇲                       \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-read -p "Select From Options [ 1 - 14 ] : " menu
+read -p "Select From Options [ 1 - 15 ] : " menu
 case $menu in
 1)
 clear
@@ -213,11 +213,9 @@ clear
 passwd
 ;;
 15)
-clear
-cekxray
-;;
-16)
 reboot
+;;
+0)
 exit
 ;;
 *)
