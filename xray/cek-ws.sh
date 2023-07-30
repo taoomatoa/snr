@@ -65,8 +65,8 @@ exit 0
 fi
 
 clear
-#echo -n /var/log/xray/access.log
-echo -n > /tmp/other.txt
+echo -n /var/log/xray/access.log
+#echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq`);
 
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
