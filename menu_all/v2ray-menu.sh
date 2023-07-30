@@ -115,8 +115,8 @@ echo -e "
 [\033[0;32m04\033[0m] • Create $rekk Vless Websocket Account
 [\033[0;32m05\033[0m] • Deleting $rekk Vless Websocket Account
 [\033[0;32m06\033[0m] • Extending $rekk Vless Account Active Life
-[\033[0;32m07\033[0m] • Check User Vmess $rekk
-[\033[0;32m08\033[0m] • Check User Vless $rekk
+[\033[0;32m07\033[0m] • Check User Login $rekk
+[\033[0;32m08\033[0m] • Check Usage $rekk
 
 \033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m
 
@@ -159,12 +159,12 @@ case "$x" in
    ;;
    7 | 07)
    clear
-   cek-ws
+   cekxray
    break
    ;;
    8 | 08)
    clear
-   cek-vless
+   cekusage
    break
    ;;
    0 | 00)
