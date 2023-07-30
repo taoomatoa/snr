@@ -125,27 +125,7 @@ case "$x" in
    ;;
    4 | 04)
    clear
-   cek-ws
-   break
-   ;;
-   5 | 05)
-   clear
-   add-trgo
-   break
-   ;;
-   6 | 06)
-   clear
-   del-trgo
-   break
-   ;;
-   7 | 07)
-   clear
-   renew-trgo
-   break
-   ;;
-   8 | 08)
-   clear
-   cek-trgo
+   cektrojan
    break
    ;;
    0 | 00)
