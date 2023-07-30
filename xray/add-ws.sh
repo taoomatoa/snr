@@ -85,7 +85,7 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
             echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-            echo -e "\\E[0;41;36m      Add Xray/Vmess Account      \E[0m"
+            echo -e "\\E[0;41;36m          Add Vmess Account      \E[0m"
             echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			echo ""
 			echo "A client with the specified name was already created, please choose another name."
@@ -134,21 +134,6 @@ ask=`cat<<EOF
       "tls": "none"
 }
 EOF`
-grpc=`cat<<EOF
-      {
-      "v": "2",
-      "ps": "${user}",
-      "add": "${domain}",
-      "port": "443",
-      "id": "${uuid}",
-      "aid": "0",
-      "net": "grpc",
-      "path": "vmess-grpc",
-      "type": "none",
-      "host": "",
-      "tls": "tls"
-}
-EOF`
 vmess_base641=$( base64 -w 0 <<< $vmess_json1)
 vmess_base642=$( base64 -w 0 <<< $vmess_json2)
 vmess_base643=$( base64 -w 0 <<< $vmess_json3)
@@ -165,19 +150,16 @@ echo -e "Remarks : ${user}" | tee -a /etc/log-create-user.log
 echo -e "Domain : ${domain}" | tee -a /etc/log-create-user.log
 echo -e "Port TLS : ${tls}" | tee -a /etc/log-create-user.log
 echo -e "Port none TLS : ${none}" | tee -a /etc/log-create-user.log
-echo -e "Port  GRPC : ${tls}" | tee -a /etc/log-create-user.log
 echo -e "id : ${uuid}" | tee -a /etc/log-create-user.log
 echo -e "alterId : 0" | tee -a /etc/log-create-user.log
 echo -e "Security : auto" | tee -a /etc/log-create-user.log
 echo -e "Network : ws" | tee -a /etc/log-create-user.log
 echo -e "Path : /vmess" | tee -a /etc/log-create-user.log
-echo -e "ServiceName : vmess-grpc" | tee -a /etc/log-create-user.log
+echo -e "ServiceName : vmess" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link TLS : ${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link none TLS : ${vmesslink2}" | tee -a /etc/log-create-user.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link GRPC : ${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
