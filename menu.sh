@@ -134,7 +134,7 @@ echo -e " ╰══════════════════════�
 echo -e "   ${CYAN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"                                                                                       echo -e "   │ $NC Version${NC}════════: $NC V1.0"════════════════════════════╯\033[0m${NC}"
 echo -e "   │ $NC Developer${NC}      : $NC TaooMatoa"
 echo -e "   │ $NC User${NC}           : ${YELLOW} $Name"
-echo -e "   │ $NC Expire Script${NC}  : ${YELLOW} $Exp"
+echo -e "   │ $NC Expired Script${NC} : ${YELLOW} $Exp"
 echo -e "   ${CYAN}╰═════════════════════════════════════════════════════════╯\033[0m${NC}"
 echo -e "" 
 echo -e ""
