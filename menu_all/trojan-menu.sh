@@ -125,7 +125,7 @@ case "$x" in
    ;;
    4 | 04)
    clear
-   cektrojan
+   cek-tr
    break
    ;;
    0 | 00)
