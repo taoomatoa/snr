@@ -74,10 +74,10 @@ domain=$(cat /etc/xray/domain)
 else
 domain=$IP
 fi
-tr="$(cat ~/log-install.txt | grep -w "Trojan " | cut -d: -f2|sed 's/ //g')" && echo $tr
+tr="$(cat ~/log-install.txt | grep -w "Trojan WS" | cut -d: -f2|sed 's/ //g')"
 until [[ $TrojanTrial =~ ^[a-zA-Z0-9_]+$ && ${TrojanTrial_EXISTS} == '0' ]]; do
 		
-		TrojanTrial_EXISTS=$(grep -w $TrojanTrial /etc/xray/config.json | wc -l)
+		TrojanTrial_EXISTS=$(grep -w $TrojanTrial /etc/xray/config.json | wc -1)
 
 		if [[ ${TrojanTrial_EXISTS} == '1' ]]; then
 			echo ""
@@ -88,11 +88,11 @@ until [[ $TrojanTrial =~ ^[a-zA-Z0-9_]+$ && ${TrojanTrial_EXISTS} == '0' ]]; do
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
 exp=`date -d "$Hariii days" +"%Y-%m-%d"`
-sed -i '/#trojanTLS$/a\#! '"$TrojanTrial $exp"'\
+sed -i '/#trojanws$/a\#! '"$TrojanTrial $exp"'\
 },{"password": "'""$uuid""'","email": "'""$TrojanTrial""'"' /etc/xray/config.json
 
 systemctl restart xray
-trojanlink="trojan://${uuid}@${domain}:${tr}"
+trojanlink="trojan://${uuid}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=bug.com&type=ws&sni=bug.com#${user}"
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[44;1;39m         ⇱ TROJAN ACCOUNT ⇲        \E[0m"
@@ -101,12 +101,14 @@ echo -e "Remarks : ${TrojanTrial}"
 echo -e "Host/IP : ${domain}"
 echo -e "port : ${tr}"
 echo -e "Key : ${uuid}"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Link : ${trojanlink}"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Expired On : $exp"
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo ""
+echo -e "Path : /trojan-ws" | tee -a /etc/log-create-user.log
+echo -e "ServiceName : trojan-ws" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Link WS : ${trojanlink}" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 
-trojan-menu
+menu
