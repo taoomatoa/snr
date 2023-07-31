@@ -1,4 +1,4 @@
-# SCRIPT XRAY PINK
+# SCRIPT XRAY TAOOMATOA
 </p> 
 
 <h2 align="center"> Supported Linux Distribution</h2>
