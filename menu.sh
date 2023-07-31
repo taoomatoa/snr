@@ -109,7 +109,7 @@ echo -e " │$NC\033[41m                  ⇱ TUNNELING TAOOMATOA ⇲           
 echo -e " ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯${NC}"
 echo -e " ╭═════════════════════════════════════════════════════════════╮$NC"
 echo -e " │${YELLOW} ✘ ${NC}Sever Uptime  = $( uptime -p  | cut -d " " -f 2-10000 ) "
-echo -e " │${YELLOW} ✘ ${NC}Current Time  = $( date -d "0 days" +"%d-%m-%Y | %X" )"
+echo -e " │${YELLOW} ✘ ${NC}Date | Time   = $( date -d "0 days" +"%d-%m-%Y | %X" )"
 echo -e " │${YELLOW} ✘ ${NC}OS            = $( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )"
 echo -e " │${YELLOW} ✘ ${NC}Domain        = $( cat /etc/xray/domain )"
 echo -e " │${YELLOW} ✘ ${NC}IP VPS        = ${IP}"
