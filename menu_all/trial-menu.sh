@@ -73,7 +73,7 @@ echo -e "\033[1;37mNB: Trial account will not logged into create log user\033[0m
 [\033[0;32m01\033[0m] • Generate Trial SSH 
 [\033[0;32m08\033[0m] • Generate Trial Vmess
 [\033[0;32m09\033[0m] • Generate Trial VLESS
-[\033[0;32m10\033[0m] • Generate Trial Trojan WS/GRPC
+[\033[0;32m10\033[0m] • Generate Trial Trojan WS
 
 [00] • Back to Main Menu \033[1;32m<\033[1;33m<\033[1;31m<\033[1;31m"
 echo ""
