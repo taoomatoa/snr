@@ -1,5 +1,5 @@
 #!/bin/bash
-#Script vPro Premium VPN
+#Script By TaooMatoa
 
 BIBlack='\033[1;90m'      # Black
 BIRed='\033[1;91m'        # Red
