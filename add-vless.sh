@@ -1,5 +1,5 @@
 #!/bin/bash
-#Script Premium BY FranataSTORE
+#Script BY Taoomatoa
 
 BIBlack='\033[1;90m'      # Black
 BIRed='\033[1;91m'        # Red
@@ -38,7 +38,7 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 BURIQ () {
-    curl -sS https://franata775.xcodehoster.com/vip/izin > /root/tmp
+    curl -sS https://github.com/taoomatoa/izinvps > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -56,7 +56,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://franata775.xcodehoster.com/vip/izin | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://github.com/taoomatoa/izinvps | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -73,7 +73,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://franata775.xcodehoster.com/vip/izin | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://github.com/taoomatoa/izinvps | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -156,7 +156,7 @@ echo -e "${BIBlue}════════════════════�
 echo -e "Link GRPC : "
 echo -e "${vlesslink3}" 
 echo -e "${BIBlue}════════════════════════════════${NC}" 
-echo -e "${BICyan} BY: FranataSTORE${NC}" 
+echo -e "${BICyan} BY: TaooMatoa${NC}" 
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
 
