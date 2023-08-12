@@ -60,7 +60,7 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 BURIQ () {
-    curl -sS https://franata775.xcodehoster.com/vip/izin > /root/tmp
+    curl -sS https://raw.githubusercontent.com/taoomatoa/izinvps/ipuk/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -78,7 +78,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://franata775.xcodehoster.com/vip/izin | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/taoomatoa/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -95,7 +95,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://franata775.xcodehoster.com/vip/izin | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/taoomatoa/izinvps/ipuk/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -114,7 +114,7 @@ if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 rm -f /home/needupdate > /dev/null 2>&1
 else
-Exp=$(curl -sS https://franata775.xcodehoster.com/vip/izin | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/taoomatoa/izinvps/ipuk/ip | grep $MYIP | awk '{print $3}')
 fi
 
 # // Clear
@@ -180,7 +180,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 UDPX="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
 clear
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " ${z}│$NC\033[41m         Welcome To Script Premium FranataSTORE           $NC${z}│$NC"
+echo -e " ${z}│$NC\033[41m         Welcome To Script  TaooMatoa           $NC${z}│$NC"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC$y System OS ${NC}     $Blue=$NC $MODEL${NC}"
