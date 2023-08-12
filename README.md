@@ -3,7 +3,7 @@ apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
 # UPDATE Ubuntu
 apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 # Installation
-<pre><code>apt update && apt upgrade -y && update-grub && sleep 2 && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt upgrade && apt install -y bzip2 gzip coreutils screen curl unzip && wget -q https://raw.githubusercontent.com/ndmservis/autoscript/main/setup.sh && chmod +x setup.sh && ./setup.sh</code></pre>
+<pre><code>apt update && apt upgrade -y && update-grub && sleep 2 && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt upgrade && apt install -y bzip2 gzip coreutils screen curl unzip && wget -q https://raw.githubusercontent.com/taoomatoa/taoomatoa.github.io/main/setup.sh && chmod +x setup.sh && ./setup.sh</code></pre>
 
 # Required
 - DOMAIN (Wajib)
